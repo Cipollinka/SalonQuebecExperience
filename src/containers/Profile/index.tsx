@@ -22,10 +22,10 @@ import NavBar from '@/components/NavBar';
 const options = [
   {
     label: 'Terms of Use',
-    value: 'https://google.com',
+    value: 'https://www.termsfeed.com/live/84b65411-257e-4d61-99a8-a1435cfb6795',
   },
-  {label: 'Privacy Policy', value: 'https://google.com'},
-  {label: 'Developer', value: 'https://google.com'},
+  {label: 'Privacy Policy', value: 'https://www.termsfeed.com/live/84b65411-257e-4d61-99a8-a1435cfb6795'},
+  {label: 'Developer', value: 'https://www.termsfeed.com/live/84b65411-257e-4d61-99a8-a1435cfb6795'},
 ];
 
 export default function Profile() {
