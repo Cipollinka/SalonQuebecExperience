@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Siberia Station Spa",
+    "description": "A tranquil outdoor spa offering Nordic baths, massages, and relaxation areas in a serene forest setting.",
+    "address": "339 Rue de Genève, QC G2M 0E1",
+    "rating": 4.8,
+    "imageUrl": "https://media-cdn.tripadvisor.com/media/photo-s/04/46/4b/d1/siberia-station-spa.jpg",
+    "category": 1,
+    "schedule": "Mon-Sun: 9:00 AM - 10:00 PM",
+    "coordinates": {"latitude": 46.915267, "longitude": -71.339032}
+  },
+  {
+    "id": 2,
+    "name": "Strøm Spa Nordique",
+    "description": "An upscale spa featuring Nordic baths, massages, and gourmet cuisine in a luxurious environment.",
+    "address": "515 Rue Champlain, QC G1K 0E4",
+    "rating": 4.7,
+    "imageUrl": "https://boutique.stromspa.com/cdn/shop/files/Bianca-Des-Jardins_QCEte_HD248.webp?v=1716422821&width=1946",
+    "category": 1,
+    "schedule": "Mon-Sun: 10:00 AM - 9:00 PM",
+    "coordinates": {"latitude": 46.803779, "longitude": -71.213965}
+  },
+  {
+    "id": 3,
+    "name": "Skyspa Québec",
+    "description": "A rooftop spa offering saunas, baths, massages, and stunning views of the city.",
+    "address": "2828 Boulevard Laurier, QC G1V 0B9",
+    "rating": 4.5,
+    "imageUrl": "https://skyspa.s3.us-east-2.amazonaws.com/uploads/img/slices-img-timeline-ete2008.jpg",
+    "category": 1,
+    "schedule": "Mon-Sun: 10:00 AM - 11:00 PM",
+    "coordinates": {"latitude": 46.772645, "longitude": -71.282571}
+  },
+  {
+    "id": 4,
+    "name": "Le Monastère des Augustines",
+    "description": "A wellness retreat offering holistic health services, spa treatments, and a peaceful atmosphere.",
+    "address": "77 Rue des Remparts, QC G1R 0C3",
+    "rating": 4.9,
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/8d/2e/25/le-monastere-des-augustines.jpg?w=700&h=-1&s=1",
+    "category": 2,
+    "schedule": "Mon-Sun: 7:00 AM - 10:00 PM",
+    "coordinates": {"latitude": 46.812992, "longitude": -71.206129}
+  },
+  {
+    "id": 5,
+    "name": "Spa des Neiges",
+    "description": "A relaxing spa with outdoor baths, saunas, and a variety of massage options in a riverside location.",
+    "address": "2987 Chemin Royal, QC G0A 3C0",
+    "rating": 4.6,
+    "imageUrl": "https://www.quebec-cite.com/sites/otq/files/styles/gallery_desktop/public/simpleview/coupons/photo-Spa-des-neiges-10-547eeaa05056a36_547eedae-5056-a36a-0709de5ce93943d2.jpg?itok=UIRH0C1J",
+    "category": 1,
+    "schedule": "Fri-Sun: 11:00 AM - 9:00 PM",
+    "coordinates": {"latitude": 47.027115, "longitude": -70.911918}
+  },
+  {
+    "id": 6,
+    "name": "Spa Scandinave Vieux-Montréal",
+    "description": "A luxurious Scandinavian-inspired spa offering hot baths, saunas, massages, and a stunning view of the Old Port.",
+    "address": "71 Rue de la Commune O, Montréal, QC H2Y 2C6",
+    "rating": 4.7,
+    "imageUrl": "https://www.sofitel-montreal.com/wp-content/uploads/sites/162/2023/02/Chute-1170x780.jpg",
+    "category": 1,
+    "schedule": "Mon-Sun: 9:00 AM - 10:00 PM",
+    "coordinates": {"latitude": 45.503663, "longitude": -73.556004}
+  },
+  {
+    "id": 7,
+    "name": "Bota Bota, spa-sur-l'eau",
+    "description": "A unique floating spa on a boat offering water circuits, massages, and panoramic views of Montreal’s skyline.",
+    "address": "358 Rue de la Commune O, Montréal, QC H2Y 2E2",
+    "rating": 4.8,
+    "imageUrl": "https://www.oldportofmontreal.com/sites/default/files/styles/facebook/public/2024-04/2018-05-drone-6.jpg?itok=xLBxBd_u",
+    "category": 1,
+    "schedule": "Mon-Sun: 10:00 AM - 9:00 PM",
+    "coordinates": {"latitude": 45.504317, "longitude": -73.551598}
+  },
+  {
+    "id": 8,
+    "name": "Balnea Spa",
+    "description": "A luxurious spa offering an array of wellness treatments, hot and cold baths, saunas, and nature walks.",
+    "address": "1001 Chemin des Lacs, Bromont, QC J2L 2R3",
+    "rating": 4.6,
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/b1/56/8e/balnea-spa-notre-domaine.jpg?w=1200&h=-1&s=1",
+    "category": 1,
+    "schedule": "Mon-Sun: 10:00 AM - 10:00 PM",
+    "coordinates": {"latitude": 45.306888, "longitude": -72.759467}
+  },
+  {
+    "id": 9,
+    "name": "Le Spa William Gray",
+    "description": "An upscale urban spa offering relaxation and rejuvenation treatments with stunning views of Old Montreal.",
+    "address": "421 Rue St-Vincent, Montréal, QC H2Y 3A6",
+    "rating": 4.7,
+    "imageUrl": "https://qtxasset.com/quartz/qcloud2/media/image/americanspa/1542318785/DEST%20Outdoor%20Pool-rev.jpg?VersionId=7EpIzTZjM_b64v.GWc4qIeSDm0WK06Q9",
+    "category": 2,
+    "schedule": "Mon-Sun: 10:00 AM - 8:00 PM",
+    "coordinates": {"latitude": 45.501073, "longitude": -73.55635}
+  },
+  {
+    "id": 10,
+    "name": "Auberge Godefroy Spa",
+    "description": "A relaxing retreat offering luxurious spa treatments, a hydrotherapy circuit, and a peaceful ambiance.",
+    "address": "1 Rue Godefroy, Bécancour, QC G9H 3Y8",
+    "rating": 4.5,
+    "imageUrl": "https://amerispa.ca/auberge-godefroy/wp-content/uploads/sites/8/2022/12/Spa_HDR_20170220_0001_HDR_final-1024x683.jpg",
+    "category": 1,
+    "schedule": "Mon-Sun: 9:00 AM - 9:00 PM",
+    "coordinates": {"latitude": 46.344021, "longitude": -72.541996}
+  }
+]

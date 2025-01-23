@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Old Quebec",
+    "description": "A historic district recognized as a UNESCO World Heritage Site. The narrow cobblestone streets, beautiful buildings with French architecture, and numerous cafes create a unique atmosphere. Important landmarks such as the Château Frontenac and Place Royale are located here.",
+    "imageUrl": "https://whc.unesco.org/uploads/thumbs/site_0300_0017-750-750-20151104121017.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Montmorency Falls",
+    "description": "A stunning natural attraction that is 30 meters higher than Niagara Falls. Visitors can admire the view from a suspension bridge or take a cable car to the top.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Montmorency_Falls_01.jpg/800px-Montmorency_Falls_01.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Plains of Abraham",
+    "description": "A historic park in the heart of Quebec City where the famous 1759 battle took place. The area is now a scenic spot for picnics, walking, and cultural events.",
+    "imageUrl": "https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/59/87.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Île d'Orléans",
+    "description": "A picturesque island near Quebec City, known for its charming villages, local food, and beautiful landscapes. A perfect spot for a peaceful day trip.",
+    "imageUrl": "https://d3d0lqu00lnqvz.cloudfront.net/media/media/fed833c0-33df-4cf6-81dc-9b2390d4d1ed.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Musée de la Civilisation",
+    "description": "A modern museum offering engaging exhibits on Quebec's culture, history, and indigenous heritage. A must-visit for culture enthusiasts.",
+    "imageUrl": "https://www.quebec-cite.com/sites/otq/files/styles/gallery_desktop/public/simpleview/coupons/photo-Museedelacivilisation-1_3cdc65df-5056-a36a-078797356ea3952f.jpg?itok=q0YfG2B8"
+  },
+  {
+    "id": 6,
+    "title": "Petit-Champlain District",
+    "description": "A charming neighborhood with narrow streets, boutique shops, and inviting cafes. Known for its artistic vibe and beautiful decorations, especially during winter.",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/48/e2/c7/rue-du-petit-champlain.jpg?w=900&h=500&s=1"
+  },
+  {
+    "id": 7,
+    "title": "Citadel of Quebec",
+    "description": "An impressive star-shaped fortress that offers panoramic views of the city. Visitors can learn about its history and enjoy the daily changing of the guard ceremony.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/La_Citadelle_de_Qu%C3%A9bec%2C_vue_du_ciel.JPG/640px-La_Citadelle_de_Qu%C3%A9bec%2C_vue_du_ciel.JPG"
+  },
+  {
+    "id": 8,
+    "title": "Laurentian Mountains",
+    "description": "A beautiful mountain range offering year-round outdoor activities. Popular for skiing in winter and hiking or kayaking in the summer.",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/b8/55/64/laurentian-mountains.jpg?w=900&h=-1&s=1"
+  }
+]

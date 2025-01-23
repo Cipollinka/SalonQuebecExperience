@@ -1,6 +1,0 @@
-module Pods_salon_quebec_salon_quebecTests {
-  umbrella header "Pods-salon_quebec-salon_quebecTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
