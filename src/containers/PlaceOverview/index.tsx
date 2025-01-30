@@ -25,6 +25,8 @@ export default function PlaceOverview({route}: any) {
     () => categories.find(item => item.id === place.category)?.label || '',
     [place],
   );
+  console.log('place', place);
+  console.log('Reviews', Reviews);
 
   const reviews = useMemo(
     () =>
