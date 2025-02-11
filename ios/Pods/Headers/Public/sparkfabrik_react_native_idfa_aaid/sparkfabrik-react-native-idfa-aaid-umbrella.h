@@ -1,1 +1,0 @@
-../../../Target Support Files/sparkfabrik-react-native-idfa-aaid/sparkfabrik-react-native-idfa-aaid-umbrella.h
