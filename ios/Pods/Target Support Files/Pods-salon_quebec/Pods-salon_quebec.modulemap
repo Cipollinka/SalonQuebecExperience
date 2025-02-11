@@ -1,0 +1,6 @@
+module Pods_salon_quebec {
+  umbrella header "Pods-salon_quebec-umbrella.h"
+
+  export *
+  module * { export * }
+}

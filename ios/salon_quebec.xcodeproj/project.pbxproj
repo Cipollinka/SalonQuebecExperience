@@ -43,6 +43,7 @@
 		5709B34CF0A7D63546082F79 /* Pods-salon_quebec.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-salon_quebec.release.xcconfig"; path = "Target Support Files/Pods-salon_quebec/Pods-salon_quebec.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-salon_quebec-salon_quebecTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-salon_quebec-salon_quebecTests.debug.xcconfig"; path = "Target Support Files/Pods-salon_quebec-salon_quebecTests/Pods-salon_quebec-salon_quebecTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-salon_quebec.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-salon_quebec.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AA7C2C62D5B87170017DC71 /* salon_quebec.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = salon_quebec.entitlements; path = salon_quebec/salon_quebec.entitlements; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = salon_quebec/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-salon_quebec-salon_quebecTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-salon_quebec-salon_quebecTests.release.xcconfig"; path = "Target Support Files/Pods-salon_quebec-salon_quebecTests/Pods-salon_quebec-salon_quebecTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -88,6 +89,7 @@
 		13B07FAE1A68108700A75B9A /* salon_quebec */ = {
 			isa = PBXGroup;
 			children = (
+				6AA7C2C62D5B87170017DC71 /* salon_quebec.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -469,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = salon_quebec/salon_quebec.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = salon_quebec/Info.plist;
@@ -497,6 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = salon_quebec/salon_quebec.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = salon_quebec/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;

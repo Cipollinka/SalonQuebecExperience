@@ -1,0 +1,1 @@
+../../../../../node_modules/@vladikstyle/react-native-apple-ads-attribution/ios/AppleAdsAttribution.h
