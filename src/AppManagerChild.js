@@ -9,6 +9,7 @@ import {
   Alert,
 } from 'react-native';
 import WebView from 'react-native-webview';
+import {Link} from "@react-navigation/native";
 
 export default function AppManagerChild({navigation, route}) {
   const linkRefresh = route.params.data;
@@ -22,13 +23,6 @@ export default function AppManagerChild({navigation, route}) {
   const openInBrowser = [
     'mailto:',
     'itms-appss://',
-    'https://m.facebook.com/',
-    'https://www.facebook.com/',
-    'https://www.instagram.com/',
-    'https://twitter.com/',
-    'https://www.whatsapp.com/',
-    'https://t.me/',
-    'fb://',
     'conexus://',
     'bmoolbb://',
     'cibcbanking://',
@@ -69,6 +63,22 @@ export default function AppManagerChild({navigation, route}) {
   const openURLInBrowser = async url => {
     await Linking.openURL(url);
   };
+
+  const socialLinks = [
+      'https://m.facebook.com/',
+      'https://www.facebook.com/',
+      'https://www.instagram.com/',
+      'https://twitter.com/',
+      'https://www.whatsapp.com/',
+      'https://t.me/',
+      'https://x.com/',
+      'fb://',
+  ];
+  console.log(linkRefresh);
+    if (checkLinkInArray(linkRefresh, socialLinks)) {
+        Linking.openURL(linkRefresh);
+        navigation.goBack();
+    }
 
   const onShouldStartLoadWithRequest = event => {
     if (checkLinkInArray(event.url, openInBrowser)) {

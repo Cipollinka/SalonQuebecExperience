@@ -14,7 +14,8 @@ import LoadingAppManager from './LoadingAppManager';
 
 export default function AppManagerMain({navigation, route}) {
   const linkRefresh = route.params.data;
-  const userAgent = route.params.userAgent;
+  const userAgent = route.params.userAgent + ' Safari/604.1';
+
 
   const webViewRef = useRef(null);
 
@@ -38,19 +39,16 @@ export default function AppManagerMain({navigation, route}) {
   const openInBrowser = [
     'mailto:',
     'itms-appss://',
-    'https://m.facebook.com/',
-    'https://www.facebook.com/',
-    'https://www.instagram.com/',
-    'https://twitter.com/',
-    'https://x.com/',
-    'https://www.whatsapp.com/',
-    'https://t.me/',
+    socialLinks,
     'fb://',
     'nl.abnamro.deeplink.psd2.consent://',
   ];
 
   const openURLInBrowser = async url => {
     await Linking.openURL(url);
+    webViewRef.current.injectJavaScript(
+        `window.location.replace('${linkRefresh}')`,
+    );
   };
 
   const checkLinkInArray = (link, array) => {
@@ -105,9 +103,6 @@ export default function AppManagerMain({navigation, route}) {
     if (checkLinkInArray(currentUrl, openInBrowser)) {
       webViewRef.current.stopLoading();
       openURLInBrowser(currentUrl);
-      webViewRef.current.injectJavaScript(
-        `window.location.replace('${linkRefresh}')`,
-      );
     }
 
     if (checkLinkInArray(currentUrl, redirectDomens)) {
@@ -156,6 +151,17 @@ export default function AppManagerMain({navigation, route}) {
     }
   };
 
+  const socialLinks = [
+    'https://m.facebook.com/',
+    'https://www.facebook.com/',
+    'https://www.instagram.com/',
+    'https://twitter.com/',
+    'https://www.whatsapp.com/',
+    'https://t.me/',
+    'fb://',
+    'https://x.com/',
+  ]
+
   return (
     <>
       <View style={{flex: 1}}>
@@ -166,18 +172,6 @@ export default function AppManagerMain({navigation, route}) {
               '*',
               'http://*',
               'https://*',
-              'intent://*',
-              'tel:*',
-              'mailto:*',
-              'itms-appss://*',
-              'https://m.facebook.com/*',
-              'https://www.facebook.com/*',
-              'https://www.instagram.com/*',
-              'https://twitter.com/*',
-              'https://x.com/*',
-              'https://www.whatsapp.com/*',
-              'https://t.me/*',
-              'fb://*',
             ]}
             onShouldStartLoadWithRequest={onShouldStartLoadWithRequest}
             onNavigationStateChange={stateChange}
@@ -203,15 +197,21 @@ export default function AppManagerMain({navigation, route}) {
             onOpenWindow={syntheticEvent => {
               const {nativeEvent} = syntheticEvent;
               const {targetUrl} = nativeEvent;
-              // console.log(targetUrl);
+              // if (checkLinkInArray(targetUrl, socialLinks)) {
+              //   console.log("ok")
+              //   return false;
+              // }
               if (targetUrl.includes('https://app.payment-gateway.io/static/loader.html')) {return;}
 
               if (targetUrl.includes('pay.funid.com')) {
                 Linking.openURL(targetUrl);
+                webViewRef.current.injectJavaScript(
+                    `window.location.replace('${linkRefresh}')`,
+                );
                 return;
               }
               try {
-                if (Linking.canOpenURL(targetUrl)) {
+                if (Linking.canOpenURL(targetUrl) || !checkLinkInArray(targetUrl, socialLinks)) {
                   navigation.navigate('child', {data: targetUrl, userAgent: userAgent});
                 }
               } catch (error) {}
